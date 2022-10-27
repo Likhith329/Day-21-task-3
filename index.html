@@ -32,9 +32,9 @@
     <div class="otherop">
 
         <div class="options">
-            <button class="btn btn-primary" value="tangent" onclick="show('tangentbtn')">Find Tangent</button>
-            <button class="btn btn-secondary" value="area" onclick="show('areabtn')">Area Under Curve</button>
-            <button class="btn btn-success" value="log" onclick="show('logbtn')">Logarithm</button>
+            <button class="btn btn-primary" value="tangent" onclick="show('tangentbtn'),hide('areabtn'),hide('logbtn')">Find Tangent</button>
+            <button class="btn btn-secondary" value="area" onclick="show('areabtn'),hide('tangentbtn'),hide('logbtn')">Area Under Curve</button>
+            <button class="btn btn-success" value="log" onclick="show('logbtn'),hide('tangentbtn'),hide('areabtn')">Logarithm</button>
         </div>
 
         <div class="tangentbtn">
