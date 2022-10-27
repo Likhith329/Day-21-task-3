@@ -1,17 +1,82 @@
-.heading{
-    text-align: center;
-    font-size: 60px; font-weight: 800; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-th{
-    font-size: 18px;
-}
-.event{
-    font-size: 20px; font-weight: 500;
-}
-table{
-    background-image: linear-gradient(to right,rgb(139, 139, 185),rgb(181, 94, 170));
-    border-radius: 20px;
-}
 body{
-    background-color: bisque;
+    background-image: linear-gradient(to left,lightgrey,gray);
+}
+.heading{
+    font-size: 50px; font-weight: 900; text-align: center; font-family: cursive;
+}
+.operations{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;width: 600px;
+}
+button{
+    width: 180px; height: 80px; margin: 10px; 
+}
+.container{
+    display: flex; flex-direction: column;margin-top: 0;
+    justify-content: center; margin: 50px;align-items: center;
+}
+input{
+    text-align: center; width: 60%; margin: 5px; border-radius: 10px; height: 50px;
+}
+.solution{
+    text-align: center; font-size: 40px; font-weight: 600;
+}
+.otherop,.tangentbtn,.areabtn,.logbtn{
+    display: none;
+}
+
+.options{
+    display: flex; 
+}
+.innerinputContent{
+    display:flex; flex-direction: column; align-items: center;
+}
+.otherop button{
+    width: 30%;
+}
+.hidebtn{
+    display: flex; justify-content: center;width: 200px;
+}
+
+@media (min-width:300px) and (max-width:600px){
+    .heading{
+        font-size: 30px; font-weight: 700;
+    }
+    .solution{
+        text-align: center; font-size: 30px; font-weight: 500;
+    }
+    .container{
+        margin: 0;
+    }
+    input{
+        width: 80%; margin-top: 10px;
+    }
+    .operations{
+        width: 100%;
+    }
+    button{
+        width: 100px; height: 50px; margin: 5px; 
+    }
+}
+
+@media (max-width:300px){
+    .heading{
+        font-size: 20px; font-weight: 500;
+    }
+    .solution{
+        text-align: center; font-size: 30px; font-weight: 500;
+    }
+    .container{
+        margin: 0;
+     }
+     .operations{
+        width: 100%;
+     }
+    button{
+        width: 60px;height: 40px; font-size: 10px!important; margin: 2px;
+    }
+    input{
+        width: 100%;margin-top: 5px;
+    }
 }

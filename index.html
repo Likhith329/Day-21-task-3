@@ -10,22 +10,66 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="heading">Coding Contests</div>
-    <div class="container-fluid">
-        <table class="table  table-bordered table-responsive" >
-            <thead>
-                <th>S no.</th>
-                <th>Event</th>
-                <th>Start time</th>
-                <th>End time</th>
-                <th>Duration</th>
-                <th>Website</th>
-            </thead>
-            <tbody class="tbody">
-
-            </tbody>
-        </table>
+  <div class="container">
+    <div class="heading">Scientific calculator using Newton API</div>
+    <input type="text" placeholder="Enter any expression or equation">
+    <div class="solution"></div>
+    <div class="operations">
+        <button class="btn btn-warning" value="simplify">Simplify</button>
+        <button class="btn btn-warning" value="factor">Factor</button>
+        <button class="btn btn-warning" value="derive">Derive</button>
+        <button class="btn btn-warning" value="integrate">Integrate</button>
+        <button class="btn btn-warning" value="zeroes">Find 0's</button>
+        <button class="btn btn-warning" value="cos">Cosine</button>
+        <button class="btn btn-warning" value="sin">Sine</button>
+        <button class="btn btn-warning"value="tan">Tangent</button>
+        <button class="btn btn-warning" value="arccos">Invere Cosine</button>
+        <button class="btn btn-warning" value="arcsin">Inverse Sine</button>
+        <button class="btn btn-warning" value="arctan">Inverse Tangent</button>
+        <button class="btn btn-warning" value="abs">Absolute Value</button>
+        <button class="btn btn-danger" onclick="show('otherop')">Other Operations</button>
     </div>
+    <div class="otherop">
+
+        <div class="options">
+            <button class="btn btn-primary" value="tangent" onclick="show('tangentbtn')">Find Tangent</button>
+            <button class="btn btn-secondary" value="area" onclick="show('areabtn')">Area Under Curve</button>
+            <button class="btn btn-success" value="log" onclick="show('logbtn')">Logarithm</button>
+        </div>
+
+        <div class="tangentbtn">
+            <div class="innerinputContent">
+                <input type="text" class="bc1" placeholder="Enter X value">
+                <input type="text" class="eq1" placeholder="Enter the equation">
+                <button class="btn btn-info" onclick="tangent()">Solve</button>
+                <div class="hidebtn"><button class="btn btn-primary" onclick="hide('tangentbtn')">Hide</button></div>
+            </div>
+        </div>
+
+        <div class="areabtn">
+            <div class="innerinputContent">
+                <input type="text" class="bcon1" placeholder="Enter X1 value">
+                <input type="text" class="bcon2" placeholder="Enter X2 value">
+                <input type="text" class="eq2" placeholder="Enter the equation">
+                <button class="btn btn-info" onclick="Area()">Solve</button>
+                <div class="hidebtn"> <button class="btn btn-secondary" onclick="hide('areabtn')">Hide</button></div>
+            </div>
+        </div>
+
+        <div class="logbtn">
+           <div class="innerinputContent">
+            <input type="text" class="argument" placeholder="Enter the argument">
+            <input type="text" class="base" placeholder="Enter the base">
+            <button class="btn btn-info" onclick="Log()">Solve</button>
+            <button class="btn btn-success" onclick="hide('logbtn')">Hide</button>
+           </div>
+        </div>
+
+        <div class="hidebtn"><button class="btn btn-danger" onclick="hide('otherop')">Hide</button></div>
+
+    </div>
+  </div>
+    
 <script src="script.js"></script>    
 </body>
 </html>
