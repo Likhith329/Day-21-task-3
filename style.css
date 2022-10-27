@@ -1,0 +1,17 @@
+.heading{
+    text-align: center;
+    font-size: 60px; font-weight: 800; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+th{
+    font-size: 18px;
+}
+.event{
+    font-size: 20px; font-weight: 500;
+}
+table{
+    background-image: linear-gradient(to right,rgb(139, 139, 185),rgb(181, 94, 170));
+    border-radius: 20px;
+}
+body{
+    background-color: bisque;
+}
